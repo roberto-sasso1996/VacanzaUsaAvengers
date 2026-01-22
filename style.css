@@ -375,3 +375,7 @@ body{
 @media (max-width: 576px){
   .countdown{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+.icon-btn{
+  touch-action: manipulation;
+}
