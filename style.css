@@ -379,3 +379,72 @@ body{
 .icon-btn{
   touch-action: manipulation;
 }
+
+.logo-chip-link{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(15,23,42,.55);
+  font-weight: 700;
+  font-size: .9rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  transition: all .2s ease;
+}
+
+.logo-chip-link:hover{
+  background: rgba(47,128,255,.12);
+  color: var(--primary-2);
+}
+
+/* Altre pagine */
+/* Content section (titolo + lista) */
+.content-section{
+  margin-top: 26px;
+}
+
+.content-card{
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 22px;
+  border: 1px solid rgba(15,23,42,.06);
+}
+
+.content-list{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.content-list li{
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.content-list li::before{
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* Grid per affiancare le content-card */
+.content-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px){
+  .content-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
