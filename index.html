@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trip Page - NYC</title>
+
+     <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-nav mb-3">
+      <div class="container-fluid px-0">
+        <a class="navbar-brand fw-bold" href="#">
+          Avengers USA<span class="brand-dot"></span>
+        </a>
+
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="row g-0 align-items-stretch">
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <div class="hero-kicker">NYC - Miami Trip • Agosto 2025</div>
+            <h1 class="hero-title">Soldi e paura mai avuti!</h1>
+            <p class="muted mb-3">
+              Pagina condivisa per itinerario, mappe giornaliere e link utili.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary-soft pill-btn" href="#itinerary">Guarda itinerario</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 position-relative">
+          <div class="hero-media">
+            <img
+              src="./img/skyline.jpg"
+              alt="Plane"
+            />
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGOS -->
+    <div class="logos mt-3">
+      <div class="logo-chip"><span class="logo-dot"></span> divertimento</div>
+      <div class="logo-chip"><span class="logo-dot"></span> aventura</div>
+      <div class="logo-chip"><span class="logo-dot"></span> cibo</div>
+      <div class="logo-chip"><span class="logo-dot"></span> serate</div>
+    </div>
+
+    <section class="destinations" id="maps">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Avengers Disponibili</h2>
+          <div class="section-sub">Per questo ci adattiamo</div>
+        </div>
+
+        <div class="nav-arrows">
+          <button class="icon-btn" type="button" onclick="scrollDest(-1)" aria-label="Prev">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18 9 12l6-6" stroke="rgba(15,23,42,.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="icon-btn" type="button" onclick="scrollDest(1)" aria-label="Next">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="m9 18 6-6-6-6" stroke="rgba(15,23,42,.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="dest-scroll" id="destScroll">
+        <article class="dest-card">
+          <img class="dest-img" src="./img/andrea.jpg" alt="NYC">
+          <div class="dest-body">
+            <h3 class="dest-name">Andrea Di Sisto</h3>
+            <div class="dest-meta">
+              <span>Detto "Il Polpo"</span>
+              <span class="rating">4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img class="dest-img" src="./img/cucco.jpg" alt="Brooklyn">
+          <div class="dest-body">
+            <h3 class="dest-name">Roberto Cuccovillo</h3>
+            <div class="dest-meta">
+              <span>Detto "L'accelerato"</span>
+              <span class="rating">4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img class="dest-img" src="./img/sasso.jpg" alt="Central Park">
+          <div class="dest-body">
+            <h3 class="dest-name">Roberto Sasso</h3>
+            <div class="dest-meta">
+              <span>Detto "Sasso"</span>
+              <span class="rating">4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="dest-card">
+          <img class="dest-img" src="./img/simo.jpg" alt="Downtown">
+          <div class="dest-body">
+            <h3 class="dest-name">Simone Piccolo</h3>
+            <div class="dest-meta">
+              <span>Detto "Simo"</span>
+              <span class="rating">4.9</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+   <section class="mt-4" id="videos">
+        <div class="text-center mb-3">
+            <h2 class="section-title mb-1">Video utili per il viaggio</h2>
+            <div class="section-sub">Guide rapide: metro, pass turistici e tips per muoversi</div>
+        </div>
+
+        <div class="feature-grid">
+
+            <!-- VIDEO 1 -->
+            <div class="feature-card">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                <div>
+                <div class="feature-title mb-0">Controlli in Aereoporto</div>
+                </div>
+            </div>
+
+            <div class="yt-wrap">
+                <iframe width="290" height="200" src="https://www.youtube.com/embed/yHOsbP25W3U?si=Dde478ztVnsqyxqL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+
+            <!-- VIDEO 2 (CARD CENTRALE "BLU" MA CON VIDEO) -->
+            <div class="feature-card center">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+                <div>
+                <div class="feature-title mb-0">Cosa vedere a New York in 1 settimana?</div>
+                </div>
+
+            </div>
+
+            <div class="yt-wrap yt-wrap--center">
+                <iframe width="290" height="200" src="https://www.youtube.com/embed/Kf9Z0T3Z2vQ?si=Eo6SvD2HMMMat7qQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+
+            <!-- VIDEO 3 -->
+            <div class="feature-card">
+            <div class="d-flex align-items-center gap-2 mb-2">
+                
+                <div>
+                <div class="feature-title mb-0">Cosa vedere a Miami in 4 Giorni</div>
+                </div>
+            </div>
+
+            <div class="yt-wrap">
+                <iframe width="290" height="200" src="https://www.youtube.com/embed/-A5AFGGociw?si=2YBdwB33QClDZBtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <!-- ITINERARIO GIORNO PER GIORNO + MAPPE -->
+    <section class="mt-4" id="day1">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Itinerario giorno per giorno</h2>
+        </div>
+      </div>
+
+      <div class="accordion" id="tripDays">
+        <!-- Giorno 1 -->
+        <div class="accordion-item border-0 mb-3" style="border-radius: 18px; overflow:hidden; box-shadow: var(--shadow);">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#d1">
+              Giorno 1 — Arrivo + Midtown
+            </button>
+          </h2>
+          <div id="d1" class="accordion-collapse collapse" data-bs-parent="#tripDays">
+            <div class="accordion-body bg-white">
+              <div class="row g-3 align-items-start">
+                <div class="col-lg-5">
+                  <h6 class="fw-bold">Programma</h6>
+                  <ul class="mb-0 text-secondary">
+                    <li>Arrivo (JFK → Hotel → Uscita)</li>
+                    <li>Bryant Park</li>
+                    <li>Wall Street Journal</li>
+                    <li>Cattedrale di San Patrizio</li>
+                    <li>Central Park , South Area</li>
+                    <li>McGee’s Pub</li>
+                    <li>Broadway</li>
+                    <li>Times Square</li>
+                    <li>Spyglass Rooftop Bar</li>
+                  </ul>
+                </div>
+                <div class="col-lg-7">
+                  <h6 class="fw-bold">Mappa (My Maps)</h6>
+                  <!-- Incolla l'iframe "Incorpora mappa" qui -->
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden border">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=13wfBnM80C3IIyUT4r3IiMFzt0Gy17hA&usp=sharing" loading="lazy"></iframe>
+                    </div>
+                    <div class="d-flex gap-2 mt-2">
+                        <a
+                            href="https://www.google.com/maps/d/view?mid=13wfBnM80C3IIyUT4r3IiMFzt0Gy17hA"
+                            target="_blank"
+                            rel="noopener"
+                            class="btn btn-outline-primary btn-sm rounded-pill"
+                        >
+                            📍 Apri su Google Maps
+                        </a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- PROMO SECTION + COUNTDOWN -->
+    <section class="promo" id="tips">
+        <div class="row g-0 align-items-stretch">
+            <div class="col-lg-4">
+            <img class="promo-img"
+                src="./img/miami.jpg"
+                alt="Beach" />
+            </div>
+
+            <div class="col-lg-8">
+            <div class="promo-body">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <span class="badge text-bg-primary rounded-pill px-3 py-2">Viaggio</span>
+                <span class="text-secondary small">Countdown al viaggio</span>
+                </div>
+
+                <h2 class="promo-title mt-3">COUNTDOWN AL 14 AGOSTO</h2>
+
+                <!-- Countdown boxes -->
+                <div class="countdown mt-3" aria-label="Countdown al 14 Agosto">
+                <div class="cd-box">
+                    <div class="cd-num" id="cdDays">--</div>
+                    <div class="cd-label">Giorni</div>
+                </div>
+                <div class="cd-box">
+                    <div class="cd-num" id="cdHours">--</div>
+                    <div class="cd-label">Ore</div>
+                </div>
+                <div class="cd-box">
+                    <div class="cd-num" id="cdMinutes">--</div>
+                    <div class="cd-label">Min</div>
+                </div>
+                <div class="cd-box">
+                    <div class="cd-num" id="cdSeconds">--</div>
+                    <div class="cd-label">Sec</div>
+                </div>
+                </div>
+
+                <p class="promo-text mt-3 mb-2" id="countdownStatus">
+                Si aggiorna automaticamente ogni secondo.
+                </p>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center mt-4 text-secondary small" id="share">
+      <div class="py-3">Nuove avventure • Sito in aggiornamento</div>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+        function scrollDest(dir){
+        const el = document.getElementById('destScroll');
+        const amount = 280 * dir;
+        el.scrollBy({ left: amount, behavior: 'smooth' });
+        }
+
+        // Countdown al 14 Agosto (00:00 ora locale)
+        (function countdownToAug14(){
+            const elDays = document.getElementById('cdDays');
+            const elHours = document.getElementById('cdHours');
+            const elMinutes = document.getElementById('cdMinutes');
+            const elSeconds = document.getElementById('cdSeconds');
+            const status = document.getElementById('countdownStatus');
+
+            if (!elDays || !elHours || !elMinutes || !elSeconds) return;
+
+            function getTargetDate(){
+            const now = new Date();
+            const year = now.getFullYear();
+
+            const targetThisYear = new Date(year, 7, 14, 0, 0, 0); // month 7 = Agosto
+            if (now <= targetThisYear) return targetThisYear;
+
+            return new Date(year + 1, 7, 14, 0, 0, 0);
+            }
+
+            let target = getTargetDate();
+            let timerId = null;
+
+            function pad2(n){ return String(n).padStart(2, '0'); }
+
+            function render(){
+            const now = new Date();
+            let diff = target - now;
+
+            // Se siamo arrivati o superato il target, fermati
+            if (diff <= 0){
+                elDays.textContent = '0';
+                elHours.textContent = '00';
+                elMinutes.textContent = '00';
+                elSeconds.textContent = '00';
+                status.textContent = "È oggi! ✈️";
+                if (timerId) clearInterval(timerId);
+                return;
+            }
+
+            const totalSeconds = Math.floor(diff / 1000);
+            const days = Math.floor(totalSeconds / 86400);
+            const hours = Math.floor((totalSeconds % 86400) / 3600);
+            const minutes = Math.floor((totalSeconds % 3600) / 60);
+            const seconds = totalSeconds % 60;
+
+            elDays.textContent = String(days);
+            elHours.textContent = pad2(hours);
+            elMinutes.textContent = pad2(minutes);
+            elSeconds.textContent = pad2(seconds);
+
+            status.textContent = `Mancano ${days} giorni al 14 agosto.`;
+            }
+
+            render();
+            timerId = setInterval(render, 1000);
+        })();
+    </script>
+</body>
+</html>
