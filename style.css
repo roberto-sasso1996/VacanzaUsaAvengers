@@ -448,3 +448,39 @@ body{
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/* Desktop (default): come prima */
+.logos{
+  overflow: visible;
+}
+
+/* Solo MOBILE: chips scrollabili orizzontalmente */
+@media (max-width: 576px){
+  .logos{
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+
+  .logos::-webkit-scrollbar{ display: none; }
+
+  .logo-chip-link{
+    white-space: nowrap;
+    scroll-snap-align: start;
+    padding: 8px 12px;
+    background: rgba(255,255,255,.75);
+    border: 1px solid rgba(15,23,42,.06);
+  }
+}
+
+@media (min-width: 577px){
+  .logos{
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+}
