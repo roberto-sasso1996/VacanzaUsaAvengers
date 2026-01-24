@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hotel – Avengers USA</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="hotel.css" />
+</head>
+
+<body>
+  <div class="app-shell">
+
+    <!-- NAVBAR (stile sito) -->
+     <nav class="navbar navbar-expand-lg top-nav mb-3">
+        <div class="container-fluid px-0">
+            <a class="navbar-brand fw-bold" href="index.html">
+            Avengers USA<span class="brand-dot"></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto gap-lg-2 align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="hotel.html">Hotel</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HEAD -->
+    <header class="mt-2">
+      <div class="section-head">
+        <div>
+          <h1 class="section-title" style="font-size: 1.35rem;">🏨 I nostri Hotel</h1>
+          <p class="section-sub">Due tappe: New York + Miami.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="hotel-grid">
+
+      <!-- HOTEL 1: NYC -->
+      <section class="hotel-card">
+        <div class="hotel-card-inner">
+          <div class="hotel-left">
+            <div class="hotel-kicker">Discover our rooms • NYC</div>
+            <div class="hotel-title">Aliz Hotel Times Square</div>
+
+            <div class="hotel-meta">
+              <div class="meta-row">
+                <span class="meta-pill">14–20 Ago</span>
+              </div>
+              <div class="meta-row">
+                <span>📍 Zona: Midtown West/ Times Sq</span>
+              </div>
+            </div>
+
+
+            <div class="hotel-actions">
+              <a class="btn btn-outline-primary pill-btn" href="https://maps.app.goo.gl/YdaEYNm8HhSUmJZB7" target="_blank" rel="noopener">Apri su Maps</a>
+            </div>
+          </div>
+
+            <div class="hotel-right">
+                <div class="hotel-badge">NYC</div>
+
+                <div id="hotelNYC" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div class="carousel-inner h-100">
+
+                    <div class="carousel-item active h-100">
+                        <img src="./img/aliz.jpg" class="hotel-photo" alt="Hotel NYC 1">
+                    </div>
+
+                    <div class="carousel-item h-100">
+                        <img src="./img/aliz2.jpeg" class="hotel-photo" alt="Hotel NYC 2" >
+                    </div>
+
+                    </div>
+
+                    <!-- Frecce -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hotelNYC" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#hotelNYC" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- HOTEL 2: MIAMI -->
+      <section class="hotel-card">
+        <div class="hotel-card-inner">
+          <div class="hotel-left">
+            <div class="hotel-kicker">Discover our rooms • Miami</div>
+            <div class="hotel-title">Hilton Garden Inn Miami South Beach</div>
+
+            <div class="hotel-meta">
+              <div class="meta-row">
+                <span class="meta-pill">20–24 Ago</span>
+              </div>
+              <div class="meta-row">
+                <span>📍 Zona: South Beach</span>
+              </div>
+            </div>
+
+           
+            
+
+            <div class="hotel-actions">
+              <a class="btn btn-outline-primary pill-btn" href="https://maps.app.goo.gl/GRWcUSRwzc7trUgs5" target="_blank" rel="noopener">Apri su Maps</a>
+            </div>
+          </div>
+
+            <div class="hotel-right">
+                <div class="hotel-badge">Miami</div>
+
+                <div id="hotelMiami" class="carousel slide h-100" data-bs-ride="carousel">
+                    <div class="carousel-inner h-100">
+
+                    <div class="carousel-item active h-100">
+                        <img src="./img/hilton.jpg" class="hotel-photo" alt="Hotel Miami 1">
+                    </div>
+
+                    <div class="carousel-item h-100">
+                        <img src="./img/hilton2.jpg" class="hotel-photo" alt="Hotel Miami 2">
+                    </div>
+
+                    </div>
+
+                    <!-- Frecce -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hotelMiami" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#hotelMiami" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+          
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-center mt-4 text-secondary small">
+      <div class="py-3">Avengers USA • Hotel page</div>
+    </footer>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

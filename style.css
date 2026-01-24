@@ -28,6 +28,20 @@ body{
   background: transparent;
 }
 
+.top-nav .nav-link{
+  color: rgba(15,23,42,.75);
+}
+
+.top-nav .nav-link:hover{
+  color: var(--primary-2);
+}
+
+.top-nav .navbar-toggler{
+  border: 1px solid rgba(15,23,42,.12);
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+
 .brand-dot{
   width: 10px;
   height: 10px;

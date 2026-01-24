@@ -1,0 +1,98 @@
+/* Layout card per questa pagina (coerente, ma solo qui) */
+    .night-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 14px;
+    }
+    @media (min-width: 992px){
+      .night-grid{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .night-card{
+      background: var(--card);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(15,23,42,.06);
+      padding: 22px;
+    }
+
+    .night-kicker{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      letter-spacing: .02em;
+      margin-bottom: 8px;
+    }
+
+    .night-kicker .dot{
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--primary);
+      box-shadow: 0 10px 22px rgba(47,128,255,.25);
+      flex: 0 0 auto;
+    }
+
+    .night-list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .night-list li{
+      position: relative;
+      padding-left: 20px;
+      color: rgba(15,23,42,.85);
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .night-list li::before{
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--primary);
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .night-note{
+      margin-top: 14px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: .95rem;
+    }
+
+    .page-hero{
+      background: linear-gradient(135deg, rgba(47,128,255,.14), rgba(255,255,255,.4));
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(15,23,42,.06);
+      padding: 22px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .page-hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(650px 260px at 30% 10%, rgba(47,128,255,.18), transparent 60%),
+        radial-gradient(520px 240px at 80% 30%, rgba(37,99,235,.10), transparent 60%);
+      pointer-events:none;
+    }
+
+    .page-hero > *{ position: relative; z-index: 1; }
+
+    .quick-actions{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
